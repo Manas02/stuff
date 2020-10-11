@@ -68,7 +68,7 @@ function turtle() {
 function setup() {
   createCanvas(windowWidth,windowHeight-100);
   angle = radians(25);
-  background(51);
+  background(200);
   createP(axiom);
   turtle();
   var button = createButton('generate');
