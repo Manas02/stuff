@@ -73,5 +73,5 @@ function setup() {
   turtle();
   var button = createButton('generate');
   button.mousePressed(generate);
-  button.mousePressed(number++);
+  button.mousePressed(number = number + 1);
 }
