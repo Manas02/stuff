@@ -62,7 +62,7 @@ function setup() {
 
 function draw() {
   background(0);
-  image(video, 0, 0, 320, 240);
+  image(video, 0, 0, windowWidth, windowHeight);
   fill(255);
   textSize(16);
   text(label, 10, height - 10);
