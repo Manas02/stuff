@@ -1,12 +1,10 @@
-// Coding Rainbow
-// Daniel Shiffman
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/E1B4UoSQMFw
+//Inspired by Daniel Shiffman
 
 // variables: A B
 // axiom: A
 // rules: (A → AB), (B → A)
 var angle;
+var number = 0;
 var axiom = 'F';
 var sentence = axiom;
 var len = 300;
@@ -43,7 +41,12 @@ function turtle() {
   background(51);
   resetMatrix();
   translate(width / 2, height);
-  stroke(255, 100);
+  strokeWeight(4);
+  if (number <= 3){
+    stroke(165,42,42,100);
+  }else{
+    stroke(0,200,0,100)
+  }
   for (var i = 0; i < sentence.length; i++) {
     var current = sentence.charAt(i);
 
@@ -70,4 +73,5 @@ function setup() {
   turtle();
   var button = createButton('generate');
   button.mousePressed(generate);
+  button.mousePressed(number++);
 }
