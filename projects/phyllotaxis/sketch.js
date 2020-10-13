@@ -22,7 +22,7 @@ function draw() {
     var r = c * sqrt(i);
     var x = r * cos(a);
     var y = r * sin(a);
-    noStroke();
+    //noStroke();
     ellipse(x, y, 10, 7);
   }
   n += 5;
