@@ -1,7 +1,4 @@
 // Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/KWoJgHFYWxY
 
 var n = 0;
 var c = 3;
@@ -13,7 +10,6 @@ var start = 0;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
-  colorMode(HSB);
 }
 
 function draw() {
@@ -25,10 +21,8 @@ function draw() {
     var r = c * sqrt(i);
     var x = r * cos(a);
     var y = r * sin(a);
-    var hu = sin(start + i * 0.5);
-    hu = map(hu, -1, 1, 0, 360);
-    fill(hu, 255, 255);
     noStroke();
+    fill(40,random(100,255),40);
     ellipse(x, y, 4, 4);
   }
   n += 5;
