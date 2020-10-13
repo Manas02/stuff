@@ -23,7 +23,7 @@ function draw() {
     var x = r * cos(a);
     var y = r * sin(a);
     noStroke();
-    ellipse(x, y, 7, 7);
+    ellipse(x, y, 10, 7);
   }
   n += 5;
   start += 5;
