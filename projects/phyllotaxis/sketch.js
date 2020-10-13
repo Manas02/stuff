@@ -10,6 +10,7 @@ var start = 0;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
+  fill(40,random(100,255),40);
 }
 
 function draw() {
@@ -22,8 +23,7 @@ function draw() {
     var x = r * cos(a);
     var y = r * sin(a);
     noStroke();
-    fill(40,random(100,255),40);
-    ellipse(x, y, 4, 4);
+    ellipse(x, y, 7, 7);
   }
   n += 5;
   start += 5;
