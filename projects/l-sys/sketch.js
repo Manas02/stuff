@@ -4,7 +4,6 @@
 // axiom: A
 // rules: (A → AB), (B → A)
 var angle;
-var number = 0;
 var axiom = 'F';
 var sentence = axiom;
 var len = 300;
@@ -42,11 +41,8 @@ function turtle() {
   resetMatrix();
   translate(width / 2, height);
   strokeWeight(4);
-  if (number <= 3){
-    stroke(165,42,42,100);
-  }else{
-    stroke(0,200,0,100)
-  }
+  stroke(0,200,0,100)
+  
   for (var i = 0; i < sentence.length; i++) {
     var current = sentence.charAt(i);
 
@@ -73,5 +69,4 @@ function setup() {
   turtle();
   var button = createButton('generate');
   button.mousePressed(generate);
-  button.mousePressed(number = number + 1);
 }
